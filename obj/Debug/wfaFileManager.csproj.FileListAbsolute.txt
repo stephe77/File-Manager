@@ -1,0 +1,10 @@
+C:\Users\Айхан\source\individual projects\wfaFileManager\bin\Debug\wfaFileManager.exe.config
+C:\Users\Айхан\source\individual projects\wfaFileManager\bin\Debug\wfaFileManager.exe
+C:\Users\Айхан\source\individual projects\wfaFileManager\bin\Debug\wfaFileManager.pdb
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.csproj.AssemblyReference.cache
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.Form1.resources
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.Properties.Resources.resources
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.csproj.GenerateResource.cache
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.csproj.CoreCompileInputs.cache
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.exe
+C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.pdb
