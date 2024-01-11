@@ -10,12 +10,13 @@ using System.Windows.Forms;
 using System.IO;
 using System.Security.Permissions;
 using System.Diagnostics;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace wfaFileManager
 {
     public partial class Form1 : Form
     {
-        private string filePath = "C:\\";
+        private string filePath = "D:";
         private bool isFile = false;
         private string currentlySelectedItemName = "";
         public Form1()
@@ -27,6 +28,14 @@ namespace wfaFileManager
         {
             filePathTextBox.Text = filePath;
             loadFiledAndDirectories();
+
+            //if (fileTypeLabel.Text == ".pdf")
+            //{
+            //    //string ste = $@"{filePathTextBox.Text}\{fileNameLabel.Text}";
+                
+            //    //pictureBox1.Image = Image.FromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+            //    this.pdfViewer1.LoadFromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+            //}
         }
 
         public void loadFiledAndDirectories()
@@ -44,7 +53,21 @@ namespace wfaFileManager
                     fileNameLabel.Text = fileDetails.Name;
                     fileTypeLabel.Text = fileDetails.Extension;
                     fileAttr = File.GetAttributes(tempFilePath);
-                    Process.Start(tempFilePath);
+                    //Process.Start(tempFilePath);
+
+                    //if (fileDetails.Extension != ".jpg" || fileDetails.Extension != ".png" || fileDetails.Extension != ".pdf")
+                    //{
+                    //    Process.Start(tempFilePath);
+                    //}
+                    if (fileDetails.Extension != ".jpg" && fileDetails.Extension != ".pdf")
+                    {
+                        Process.Start(tempFilePath);
+                    }
+                    if (fileDetails.Extension == ".pdf")
+                    {
+                        pdfViewer1.LoadFromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+                    }
+
                 }
                 else
                 {
@@ -55,10 +78,15 @@ namespace wfaFileManager
                 if ((fileAttr & FileAttributes.Directory) == FileAttributes.Directory)
                 {
                     fileList = new DirectoryInfo(filePath);
-                    FileInfo[] files = fileList.GetFiles(); // все файлы получаются
-                    DirectoryInfo[] dirs = fileList.GetDirectories(); // получа.ются директории
+                    FileInfo[] files = fileList.GetFiles();
+                    DirectoryInfo[] dirs = fileList.GetDirectories();
                     string fileExtension = "";
                     listView1.Items.Clear();
+
+                    if (fileExtension == ".jpg")
+                    {
+                        Image.FromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+                    }
 
                     for (int i = 0; i < files.Length; i++)
                     {
@@ -72,6 +100,26 @@ namespace wfaFileManager
 
                             case ".PNG":
                             case ".JPG":
+
+                                //// Создание нового объекта ImageList для хранения картинок
+                                //ImageList imageList = new ImageList();
+                                //imageList.ImageSize = new Size(48, 48); // Установка размера картинок
+
+                                //// Добавление картинки из jpg-файла в ImageList
+                                //Image image = Image.FromFile($@"{filePathTextBox.Text}{fileNameLabel.Text}");
+                                //imageList.Images.Add(image);
+
+                                //listView1.LargeImageList = imageList;
+                                //listView1.SmallImageList = imageList;
+
+                                //string ste = $@"{filePathTextBox.Text}\{fileNameLabel.Text})";
+                                //if (fileTypeLabel.Text == ".jpg" || fileTypeLabel.Text == ".jpeg")
+                                //{
+                                //    Image.FromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+                                //}
+                                //Image.FromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+                                //listView1.Items.Add(files[i].Name, ste);
+
                                 listView1.Items.Add(files[i].Name, 6);
                                 break;
 
@@ -121,10 +169,24 @@ namespace wfaFileManager
 
         public void loadButtonAction()
         {
+            
             removeBackSlash();
             filePath = filePathTextBox.Text;
             loadFiledAndDirectories();
             isFile = false;
+
+            
+            
+                //imageLocation = filePathTextBox.Text;
+
+                //pictureBox1.ImageLocation = imageLocation;
+            
+            //pictureBox1.ImageLocation = filePathTextBox.Text;
+            //imageLocation = filePathTextBox.Text;
+
+            //pictureBox1.ImageLocation = imageLocation;
+
+
         }
 
         public void removeBackSlash()
@@ -177,6 +239,14 @@ namespace wfaFileManager
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
             loadButtonAction();
+            if (fileTypeLabel.Text == ".jpg" || fileTypeLabel.Text == ".jpeg")
+            {
+                pictureBox1.Image = Image.FromFile($@"{filePathTextBox.Text}\{fileNameLabel.Text}");
+            }
+
+
+            //pictureBox1.Image = Image.FromFile(filePath);
+
         }
 
         private void backButton_Click(object sender, EventArgs e)

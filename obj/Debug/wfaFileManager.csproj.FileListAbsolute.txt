@@ -8,3 +8,21 @@ C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileM
 C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.csproj.CoreCompileInputs.cache
 C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.exe
 C:\Users\Айхан\source\individual projects\wfaFileManager\obj\Debug\wfaFileManager.pdb
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\wfaFileManager.exe.config
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\wfaFileManager.exe
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\wfaFileManager.pdb
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.Pdf.dll
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.PdfViewer.Asp.dll
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.PdfViewer.Forms.dll
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Microsoft.mshtml.dll
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.Pdf.xml
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.PdfViewer.Asp.xml
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\bin\Debug\Spire.PdfViewer.Forms.xml
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.csproj.AssemblyReference.cache
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.Form1.resources
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.Properties.Resources.resources
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.csproj.GenerateResource.cache
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.csproj.CoreCompileInputs.cache
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.csproj.CopyComplete
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.exe
+C:\Users\Айхан\Desktop\newFM\wfaFileManager\obj\Debug\wfaFileManager.pdb
